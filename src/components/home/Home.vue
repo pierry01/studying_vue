@@ -7,21 +7,21 @@
         title="Categorias"
         icon="fa fa-folder"
         color="#d54d50"
-        value="8"
+        :value="categories.length"
       />
 
       <Statistic
         title="Artigos"
         icon="fa fa-file"
         color="#3bc480"
-        value="3"
+        :value="articles.length"
       />
 
       <Statistic
         title="Usuários"
         icon="fa fa-user"
         color="#3282cd"
-        value="2"
+        :value="users.length"
       />
     </div>
   </div>
@@ -30,10 +30,12 @@
 <script>
 import PageTitle from "../template/PageTitle";
 import Statistic from "./Statistic";
+import { mapState } from "vuex";
 // import axios from "axios";
 
 export default {
   components: { PageTitle, Statistic },
+  computed: mapState(["categories", "articles", "users"]),
   // methods: {
   //   getStatistics() {
   //     axios.get("/statistics").then((res) => (this.statistic = res.data));
