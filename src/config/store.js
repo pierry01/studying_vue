@@ -26,8 +26,42 @@ export default new Vuex.Store({
       { title: "Article 3" },
     ],
     users: [
-      { name: "User 1", email: "user@1.com" },
-      { name: "User 2", email: "user@2.com" },
+      {
+        id: "1",
+        name: "User 1",
+        email: "user@1.com",
+        admin: true,
+      },
+      {
+        id: "2",
+        name: "User 2",
+        email: "user@2.com",
+        admin: false,
+      },
+      {
+        id: "3",
+        name: "User 3",
+        email: "user@3.com",
+        admin: false,
+      },
+      {
+        id: "4",
+        name: "User 4",
+        email: "user@4.com",
+        admin: true,
+      },
+      {
+        id: "5",
+        name: "User 5",
+        email: "user@5.com",
+        admin: true,
+      },
+      {
+        id: "6",
+        name: "User 6",
+        email: "user@6.com",
+        admin: false,
+      },
     ],
   },
   mutations: {
