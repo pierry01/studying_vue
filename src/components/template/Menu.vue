@@ -40,7 +40,26 @@ export default {
     getTreeData() {
       return this.$store.state.categories;
     },
+    // onNodeSelect(node) {
+    //   this.$router.push({
+    //     name: "articlesByCategory",
+    //     params: { id: node.id },
+    //   });
+    // },
   },
+  // watch: {
+  //   $route(to) {
+  //     this.category.id = to.params.id;
+  //     this.articles = [];
+  //     this.page = 1;
+  //     this.loadMore = true;
+  //     this.getCategory();
+  //     this.getArticles();
+  //   },
+  // },
+  // mounted() {
+  //   this.$refs.tree.$on("node:selected", this.onNodeSelect);
+  // },
 };
 </script>
 

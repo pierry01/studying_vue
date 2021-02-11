@@ -5,16 +5,9 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    isMenuVisible: true,
+    isMenuVisible: false,
     mode: "save",
-    user: {
-      id: "1",
-      name: "Jean Mendonça",
-      email: "pierrybm@gmail.com",
-      admin: true,
-      password: "123123",
-      confirmPassword: "123123",
-    },
+    user: null,
     categories: [
       {
         id: "1",
@@ -58,9 +51,9 @@ export default new Vuex.Store({
     users: [
       {
         id: "1",
-        name: "Jean Mendonça",
-        email: "pierrybm@gmail.com",
-        admin: true,
+        name: "User 1",
+        email: "user@1.com",
+        admin: false,
         password: "123123",
         confirmPassword: "123123",
       },
