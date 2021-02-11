@@ -14,7 +14,7 @@
         title="Artigos"
         icon="fa fa-file"
         color="#3bc480"
-        :value="articles.length"
+        value="14"
       />
 
       <Statistic

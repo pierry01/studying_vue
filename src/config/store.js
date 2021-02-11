@@ -16,19 +16,44 @@ export default new Vuex.Store({
       confirmPassword: "123123",
     },
     categories: [
-      { title: "Categoria 1" },
-      { title: "Categoria 2" },
-      { title: "Categoria 3" },
-      { title: "Categoria 4" },
-      { title: "Categoria 5" },
-      { title: "Categoria 6" },
-      { title: "Categoria 7" },
-      { title: "Categoria 8" },
-    ],
-    articles: [
-      { title: "Article 1" },
-      { title: "Article 2" },
-      { title: "Article 3" },
+      {
+        id: "1",
+        title: "Categoria 1",
+        children: [
+          { id: "1", title: "Article 1 - Categoria 1" },
+          { id: "2", title: "Article 2 - Categoria 1" },
+          { id: "3", title: "Article 3 - Categoria 1" },
+        ],
+      },
+      {
+        id: "2",
+        title: "Categoria 2",
+        children: [
+          { id: "1", title: "Article 1 - Categoria 2" },
+          { id: "2", title: "Article 2 - Categoria 2" },
+          { id: "3", title: "Article 3 - Categoria 2" },
+          { id: "4", title: "Article 4 - Categoria 2" },
+          { id: "5", title: "Article 5 - Categoria 2" },
+        ],
+      },
+      {
+        id: "3",
+        title: "Categoria 3",
+        children: [
+          { id: "1", title: "Article 1 - Categoria 3" },
+          { id: "2", title: "Article 2 - Categoria 3" },
+        ],
+      },
+      {
+        id: "4",
+        title: "Categoria 4",
+        children: [
+          { id: "1", title: "Article 1 - Categoria 4" },
+          { id: "2", title: "Article 2 - Categoria 4" },
+          { id: "3", title: "Article 3 - Categoria 4" },
+          { id: "4", title: "Article 4 - Categoria 4" },
+        ],
+      },
     ],
     users: [
       {
